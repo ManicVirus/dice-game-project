@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: larger;
+}
+
+.container {
+  margin: 90px auto;
+  padding: 10px;
+  background-image: radial-gradient(circle, rgba(16, 202, 81, 0.603) 40%, rgba(8, 116, 46, 0.8) 60%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border: 5px dashed rgba(255, 0, 0, 0.137);
+  animation: flash 0.5s infinite alternate;
+}
+
+@keyframes flash {
+  to {
+    border-color: rgb(255, 0, 0);
+  }
+}
+h1 {
+  margin-bottom: 20px;
+  font-family: "Ephesis", sans-serif;
+  font-size: 80px;
+  color: rgb(251, 204, 123);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 30px;
+  color: rgb(251, 204, 123);
+}
+
+p {
+  font-weight: bold;
+  color: rgb(251, 204, 123);
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.player,
+.computer {
+  flex: 1;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(251, 204, 123);
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+}
+
+#winnerMessage {
+  font-weight: bold;
+  font-size: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.help-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#helpButton {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rules {
+  color: #000;
+}
+
+h3 {
+  color: black;
+}/*# sourceMappingURL=style.css.map */
